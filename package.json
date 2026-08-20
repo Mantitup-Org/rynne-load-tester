@@ -1,0 +1,22 @@
+{
+  "name": "rynne-load-tester",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone capacity load tester for Rynne (autocannon). Adapted from agile8118/1m-rps-tester methodology — not a 1M RPS claim.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "bench": "node src/bench.mjs",
+    "scenario:health": "node src/scenarios/health.mjs",
+    "scenario:public-events": "node src/scenarios/public-events.mjs",
+    "scenario:public-event": "node src/scenarios/public-event.mjs",
+    "scenario:bff-public-events": "node src/scenarios/bff-public-events.mjs",
+    "legacy:patch": "node reference/patch.js"
+  },
+  "dependencies": {
+    "autocannon": "^8.0.0",
+    "dotenv": "^16.6.1"
+  }
+}
