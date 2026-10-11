@@ -11,6 +11,10 @@
     "bench": "node src/bench.mjs",
     "scenario:health": "node src/scenarios/health.mjs",
     "scenario:public-events": "node src/scenarios/public-events.mjs",
+    "scenario:direct-public-events": "node src/scenarios/direct-public-events.mjs",
+    "scenario:direct-public-places": "node src/scenarios/direct-public-places.mjs",
+    "scenario:direct-public-calendars": "node src/scenarios/direct-public-calendars.mjs",
+    "scenario:bff-public-calendars": "node src/scenarios/bff-public-calendars.mjs",
     "scenario:public-event": "node src/scenarios/public-event.mjs",
     "scenario:bff-public-events": "node src/scenarios/bff-public-events.mjs",
     "legacy:patch": "node reference/patch.js"

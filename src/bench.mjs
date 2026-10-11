@@ -142,6 +142,9 @@ export async function runBench(opts) {
 
   const payload = {
     meta: {
+      environment:
+        process.env.LOADTEST_ENV ||
+        "local-docker-postgres + node serve-local (not wrangler)",
       harness: "rynne-load-tester",
       note: "Capacity benchmark, not a production traffic simulator. Not a 1M RPS claim.",
       reference: "https://github.com/agile8118/1m-rps-tester",
